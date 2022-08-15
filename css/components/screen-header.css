@@ -1,0 +1,73 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+}
+
+.screen-header__dotge {
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 95px;
+}
+
+.screen-header__dotge-more {
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 145px;
+}
+
+@keyframes translateMusic {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.screen-header__icons .fa-music:hover {
+    animation: translateMusic 1s linear infinite;
+}
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-gear:hover {
+    animation: rotateCog 1s linear infinite;
+}
+
+@keyframes scaleGlass {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: none;
+    }
+}
+.screen-header__icons .fa-magnifying-glass:hover {
+    animation: scaleGlass 1s linear infinite;
+}
